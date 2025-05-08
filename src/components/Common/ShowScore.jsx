@@ -16,7 +16,8 @@ import { getQuizEndData } from 'src/store/reducers/tempDataSlice'
 import { websettingsData } from 'src/store/reducers/webSettings'
 import { resetremainingSecond } from 'src/store/reducers/showRemainingSeconds'
 import winnweAnimation from '../winner_animation.json'
-import Lottie from 'react-lottie-player'
+import dynamic from 'next/dynamic'
+const Lottie = dynamic(() => import('react-lottie-player'), { ssr: false })
 import userImg from "src/assets/images/user.svg"
 function ShowScore({
   t,
