@@ -111,16 +111,14 @@ const Header = () => {
                     <div className="container position-relative">
                         <div className="row justify-content-between align-items-center">
                             <div className="col-xl-2 col-auto order-0">
-                                {/* {stickylogo ?
+                                {stickylogo ?
                                     <Logo image={stickylogoimage} isActive={isActive} setIsActive={setIsActive} />
                                     :
                                     <Logo image={logoimage} isActive={isActive} setIsActive={setIsActive} />
-                                } */}
+                                }
 
 
-
- <Logo image={logo} isActive={isActive} setIsActive={setIsActive} />
-                                     
+                               
                                    
                             
 

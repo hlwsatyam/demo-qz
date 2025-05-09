@@ -10,7 +10,9 @@ import { useSelector } from 'react-redux'
 import { selectHome } from 'src/store/reducers/homeSlice'
 import noDataImage from '../../assets/images/no_data_found.svg'
 import { t } from 'i18next'
-
+ import dynamic from 'next/dynamic'
+ 
+const ContestPlay = dynamic(() => import('src/pages/contest-play-home'), { ssr: false })
 const HomeComp = () => {
     // const selectcurrentLanguage = useSelector(selectCurrentLanguage)
     const selectHomeData = useSelector(selectHome)
@@ -22,6 +24,12 @@ const HomeComp = () => {
 
     return (
         <main className='main'>
+
+
+ {isLogin() &&  <ContestPlay/> }    
+
+
+
             {
                 selectHomeData.data !== '102' ? <>
                     <IntroSlider homeSettings={selectHomeData?.data} isLoading={selectHomeData?.loading} />

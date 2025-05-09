@@ -28,9 +28,12 @@ export const userSlice = createSlice({
       user.token = data?.api_token
       user.isLogin = true
 
-      user.data.userStatics = {}
-
-      user.data.userProfileStatics = {}
+      if (!user.data) {
+        user.data = {};
+      }
+      
+      user.data.userStatics = {};
+      user.data.userProfileStatics = {};
 
       user.data.name = data?.name.charAt(0).toUpperCase() + data?.name.slice(1)
 

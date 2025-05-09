@@ -39,55 +39,7 @@ const AllQuiz = () => {
 
   // data show
   const [data, setData] = useState([
-    {
-      id: 0,
-      image: quiz_zone_icon,
-      quizname: 'Quiz Zone',
-      quizDesc: 'Select your favorite Zone to play',
-      url: '/quiz-zone',
-      quizzonehide: '1'
-    },
-    {
-      id: 1,
-      image: daily_quiz_icon,
-      quizname: 'Daily Quiz',
-      quizDesc: 'Daily basic new quiz game',
-      url: '/quiz-play/daily-quiz-dashboard',
-      dailyquizhide: '1'
-    },
-    {
-      id: 2,
-      image: true_false_icon,
-      quizname: 'True & False',
-      quizDesc: 'Choice your answers',
-      url: '/quiz-play/true-and-false-play',
-      truefalsehide: '1'
-    },
 
-    {
-      id: 3,
-      image: fun_learn_icon,
-      quizname: 'Fun & Learn',
-      quizDesc: "It's like a comprehension game",
-      url: '/fun-and-learn',
-      funandlearnhide: '1'
-    },
-    {
-      id: 4,
-      image: guess_the_word_icon,
-      quizname: 'Guess The Word',
-      quizDesc: 'Fun vocabulary game',
-      url: '/guess-the-word',
-      guessthewordhide: '1'
-    },
-    {
-      id: 5,
-      image: self_challange_icon,
-      quizname: "Self Challenge",
-      quizDesc: 'Challenge Yourself',
-      url: '/self-learning',
-      selfchallengehide: '1'
-    },
     {
       id: 6,
       image: contest_play_icon,
@@ -96,46 +48,101 @@ const AllQuiz = () => {
       url: '/contest-play',
       contestplayhide: '1'
     },
-    {
-      id: 7,
-      image: one_one_battle_icon,
-      quizname: '1 v/s 1 Battle',
-      quizDesc: 'Battle with one on one',
-      url: '/random-battle',
-      battlequizhide: '1'
-    },
-    {
-      id: 8,
-      image: group_battle_icon,
-      quizname: 'Group Battle',
-      quizDesc: `It's a group quiz battle`,
-      url: '/group-battle',
-      groupplayhide: '1'
-    },
-    {
-      id: 9,
-      image: audio_question_icon,
-      quizname: 'Audio Questions',
-      quizDesc: 'Select your favorite Zone to play',
-      url: '/audio-questions',
-      audioQuestionshide: '1'
-    },
-    {
-      id: 10,
-      image: math_mania_icon,
-      quizname: 'Math Mania',
-      quizDesc: 'Challenge Your Mind',
-      url: '/math-mania',
-      mathQuestionshide: '1'
-    },
-    {
-      id: 11,
-      image: exam_icon,
-      quizname: 'Exam',
-      quizDesc: 'Boost your knowledge',
-      url: '/exam-module',
-      examQuestionshide: '1'
-    },
+
+
+
+
+
+    // {
+    //   id: 0,
+    //   image: quiz_zone_icon,
+    //   quizname: 'Quiz Zone',
+    //   quizDesc: 'Select your favorite Zone to play',
+    //   url: '/quiz-zone',
+    //   quizzonehide: '1'
+    // },
+    // {
+    //   id: 1,
+    //   image: daily_quiz_icon,
+    //   quizname: 'Daily Quiz',
+    //   quizDesc: 'Daily basic new quiz game',
+    //   url: '/quiz-play/daily-quiz-dashboard',
+    //   dailyquizhide: '1'
+    // },
+    // {
+    //   id: 2,
+    //   image: true_false_icon,
+    //   quizname: 'True & False',
+    //   quizDesc: 'Choice your answers',
+    //   url: '/quiz-play/true-and-false-play',
+    //   truefalsehide: '1'
+    // },
+
+    // {
+    //   id: 3,
+    //   image: fun_learn_icon,
+    //   quizname: 'Fun & Learn',
+    //   quizDesc: "It's like a comprehension game",
+    //   url: '/fun-and-learn',
+    //   funandlearnhide: '1'
+    // },
+    // {
+    //   id: 4,
+    //   image: guess_the_word_icon,
+    //   quizname: 'Guess The Word',
+    //   quizDesc: 'Fun vocabulary game',
+    //   url: '/guess-the-word',
+    //   guessthewordhide: '1'
+    // },
+    // {
+    //   id: 5,
+    //   image: self_challange_icon,
+    //   quizname: "Self Challenge",
+    //   quizDesc: 'Challenge Yourself',
+    //   url: '/self-learning',
+    //   selfchallengehide: '1'
+    // },
+   
+    // {
+    //   id: 7,
+    //   image: one_one_battle_icon,
+    //   quizname: '1 v/s 1 Battle',
+    //   quizDesc: 'Battle with one on one',
+    //   url: '/random-battle',
+    //   battlequizhide: '1'
+    // },
+    // {
+    //   id: 8,
+    //   image: group_battle_icon,
+    //   quizname: 'Group Battle',
+    //   quizDesc: `It's a group quiz battle`,
+    //   url: '/group-battle',
+    //   groupplayhide: '1'
+    // },
+    // {
+    //   id: 9,
+    //   image: audio_question_icon,
+    //   quizname: 'Audio Questions',
+    //   quizDesc: 'Select your favorite Zone to play',
+    //   url: '/audio-questions',
+    //   audioQuestionshide: '1'
+    // },
+    // {
+    //   id: 10,
+    //   image: math_mania_icon,
+    //   quizname: 'Math Mania',
+    //   quizDesc: 'Challenge Your Mind',
+    //   url: '/math-mania',
+    //   mathQuestionshide: '1'
+    // },
+    // {
+    //   id: 11,
+    //   image: exam_icon,
+    //   quizname: 'Exam',
+    //   quizDesc: 'Boost your knowledge',
+    //   url: '/exam-module',
+    //   examQuestionshide: '1'
+    // },
   ])
 
 

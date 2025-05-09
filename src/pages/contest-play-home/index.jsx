@@ -16,7 +16,7 @@ import toast from 'react-hot-toast'
 import dynamic from 'next/dynamic'
 const Layout = dynamic(() => import('src/components/Layout/Layout'), { ssr: false })
 
-const ContestPlay = () => {
+const ContestPlayHome = () => {
 
   const dispatch = useDispatch()
   //states
@@ -84,8 +84,8 @@ const ContestPlay = () => {
   }, [selectCurrentLanguage])
 
   return (
-    <Layout>
-      <Breadcrumb showBreadcrumb={true} title={t('Contest Play')} content={t('home')} allgames={`${t('quiz')} ${t('play')}`} contentTwo="" />
+    <div>
+      <Breadcrumb showBreadcrumb={true} title={t('Contest Play')}   />
       <div className='contestPlay mb-5'>
         <div className='container'>
           <div className='row morphisam mb-5'>
@@ -107,11 +107,11 @@ const ContestPlay = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </div>
   )
 }
  
 
 
 
-export default ContestPlay
+export default ContestPlayHome

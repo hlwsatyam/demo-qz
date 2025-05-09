@@ -26,8 +26,8 @@ const Footer = () => {
     const footer_logo = websettingsdata && websettingsdata.footer_logo;
 
     // company text
-    const company_text =  "Quizaa made with key principles of a beautiful, effective, simple to use and better code quality with use of functional based component";
-    // const company_text = websettingsdata && websettingsdata.company_text;
+     
+ const company_text = websettingsdata && websettingsdata.company_text;
 
     // address
     const address_text = websettingsdata && websettingsdata.address_text;
@@ -54,7 +54,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-6 col-lg-3  col-12 footer_left">
                             <div className="footer_logo">
-                                <Logo image={logo} />
+                                <Logo image={footer_logo} />
                             </div>
                             <div className="footer_left_text">
                                 <p>{company_text}</p>

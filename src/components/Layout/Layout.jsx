@@ -108,15 +108,15 @@ const Layout = ({ children }) => {
     }
   }, [redirect])
 
-  // useEffect(() => {
-  //   document.documentElement.style.setProperty('--primary-color', webSettings && webSettings?.primary_color ? webSettings && webSettings?.primary_color : "#EF5388FF")
-  //   document.documentElement.style.setProperty('--secondary-color', webSettings && webSettings?.footer_color ? webSettings?.footer_color : "#090029FF")
-  // }, [webSettings])
-
   useEffect(() => {
-    document.documentElement.style.setProperty('--primary-color',  "#FFD700"); // Yellow (Gold)
-    document.documentElement.style.setProperty('--secondary-color',   "#252525"); // Orange-yellow
-  }, [webSettings]);
+    document.documentElement.style.setProperty('--primary-color', webSettings && webSettings?.primary_color ? webSettings && webSettings?.primary_color : "#EF5388FF")
+    document.documentElement.style.setProperty('--secondary-color', webSettings && webSettings?.footer_color ? webSettings?.footer_color : "#090029FF")
+  }, [webSettings])
+
+  // useEffect(() => {
+  //   document.documentElement.style.setProperty('--primary-color',  "#FFD700"); // Yellow (Gold)
+  //   document.documentElement.style.setProperty('--secondary-color',   "#252525"); // Orange-yellow
+  // }, [webSettings]);
   
 
 
